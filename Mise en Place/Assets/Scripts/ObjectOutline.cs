@@ -19,7 +19,8 @@ public class ObjectOutline : MonoBehaviour {
 	}
 
 	void OnMouseEnter () {
-		GetComponent<MeshRenderer> ().material.SetColor ("_OutlineColor", Color.yellow);
+		if (Vector3.Distance(transform.position, Camera.main.transform.position) < 2)
+			GetComponent<MeshRenderer> ().material.SetColor ("_OutlineColor", Color.yellow);
 	}
 
 	void OnMouseExit() {

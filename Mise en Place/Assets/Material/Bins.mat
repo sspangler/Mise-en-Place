@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Red
+  m_Name: Bins
   m_Shader: {fileID: 4800000, guid: 6d2e5cd4bf2ff634b85414293c1c09d4, type: 3}
   m_ShaderKeywords: _EMISSION
   m_LightmapFlags: 1
@@ -102,7 +102,7 @@ Material:
       second: 1
     - first:
         name: _Outline
-      second: 0.0011
+      second: 0.001
     - first:
         name: _Parallax
       second: 0.02
@@ -124,10 +124,10 @@ Material:
     m_Colors:
     - first:
         name: _Color
-      second: {r: 1, g: 0, b: 0, a: 1}
+      second: {r: 0.61764705, g: 0.61764705, b: 0.61764705, a: 1}
     - first:
         name: _EmissionColor
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _OutlineColor
-      second: {r: 0.930426, g: 1, b: 0.2794118, a: 0}
+      second: {r: 0.99215686, g: 1, b: 0.007843138, a: 0}

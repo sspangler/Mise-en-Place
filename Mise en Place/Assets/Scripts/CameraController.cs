@@ -15,7 +15,7 @@ public class CameraController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Cursor.lockState = CursorLockMode.Locked;
-		Cursor.visible = false;
+		Cursor.visible = true;
 	}
 	
 	// Update is called once per frame
@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour {
 			mainCamera.transform.eulerAngles = new Vector3 (mainCamera.transform.eulerAngles.x, transform.eulerAngles.y, 0);
 		}
 
-		if(Input.GetKeyUp(KeyCode.Escape) && lockCursor == true)
+		if(Input.GetKeyDown(KeyCode.LeftControl) && lockCursor == true)
 		{
 			Cursor.lockState = CursorLockMode.None;
 			Cursor.visible = true;
