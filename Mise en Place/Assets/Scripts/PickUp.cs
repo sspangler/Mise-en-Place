@@ -3,11 +3,12 @@ using System.Collections;
 
 public class PickUp : MonoBehaviour {
 
+	public OrgStage orgStage;
 	public GameObject mainCamera;
 	public PlayerController playerController;
 	Rigidbody objectRigidbody;
 	public Vector3 startPos;
-	bool toolBar = true;
+	bool toolBar = false;
 
 	// Use this for initialization
 	void Start () {
@@ -32,21 +33,12 @@ public class PickUp : MonoBehaviour {
 	}
 
 	public void PickUpItem () {
-		//if (Vector3.Distance (mainCamera.transform.position, transform.position) < 2f) {
-		if (toolBar) {
-			if (playerController.pickedObject != null) {
-				playerController.pickedObject.transform.position = playerController.pickedObject.GetComponent<PickUp> ().startPos;
-				playerController.DropObject ();
-			}
-			this.transform.SetParent (mainCamera.transform);
-			transform.localPosition = new Vector3 (0, .05f, 1);
-			transform.localEulerAngles = new Vector3 (0, 90, -15f);
-			playerController.pickedObject = this.gameObject;
-			objectRigidbody.useGravity = false;
-			objectRigidbody.isKinematic = true;
-			GetComponent<Collider> ().enabled = false;
-		} else {
-			if (Vector3.Distance (mainCamera.transform.position, transform.position) < 2f) {
+		if (orgStage.isOrgStage) {
+			if (toolBar) {
+				if (playerController.pickedObject != null) {
+					playerController.pickedObject.transform.position = playerController.pickedObject.GetComponent<PickUp> ().startPos;
+					playerController.DropObject ();
+				}
 				this.transform.SetParent (mainCamera.transform);
 				transform.localPosition = new Vector3 (0, .05f, 1);
 				transform.localEulerAngles = new Vector3 (0, 90, -15f);
@@ -54,7 +46,20 @@ public class PickUp : MonoBehaviour {
 				objectRigidbody.useGravity = false;
 				objectRigidbody.isKinematic = true;
 				GetComponent<Collider> ().enabled = false;
+			} else {
+				if (Vector3.Distance (mainCamera.transform.position, transform.position) < 2f) {
+					this.transform.SetParent (mainCamera.transform);
+					transform.localPosition = new Vector3 (0, .05f, 1);
+					transform.localEulerAngles = new Vector3 (0, 90, -15f);
+					playerController.pickedObject = this.gameObject;
+					objectRigidbody.useGravity = false;
+					objectRigidbody.isKinematic = true;
+					GetComponent<Collider> ().enabled = false;
+				}
 			}
+		} else { //not orgstage pick up ingredient not bin
+
+
 		}
 	}
 }
