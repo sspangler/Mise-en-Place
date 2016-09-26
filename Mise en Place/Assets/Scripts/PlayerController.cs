@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour {
 
 	LayerMask layerMask;
 
+	float hight = 2;
+
 	// Use this for initialization
 	void Start () {
 		layerMask = 1 << LayerMask.NameToLayer ("Enviorment");
@@ -16,33 +18,35 @@ public class PlayerController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+
+		//Debug.DrawRay (transform.position + Vector3.up / 2f, transform.forward, Color.green);
 		// Movement-----------------------
 		if (Input.GetKey (KeyCode.W)) {
-			if (!Physics.Raycast (transform.position + Vector3.up/ 1f, transform.forward, .51f, layerMask) &&
-			    !Physics.Raycast (transform.position + Vector3.down/ 1f, transform.forward, .51f, layerMask)) {
+			if (!Physics.Raycast (transform.position + Vector3.up/ hight, transform.forward, .51f, layerMask) &&
+				!Physics.Raycast (transform.position + Vector3.down/ hight, transform.forward, .51f, layerMask)) {
 				MoveForward ();
 			}
 		}
 		if (Input.GetKey (KeyCode.S)) {
-			if (!Physics.Raycast (transform.position + Vector3.up / 1f, -transform.forward, .51f, layerMask) &&
-			    !Physics.Raycast (transform.position + Vector3.down / 1f, -transform.forward, .51f, layerMask)) {
+			if (!Physics.Raycast (transform.position + Vector3.up / hight, -transform.forward, .51f, layerMask) &&
+				!Physics.Raycast (transform.position + Vector3.down / hight, -transform.forward, .51f, layerMask)) {
 				MoveBackwards ();
 			}
 		}
 		if (Input.GetKey (KeyCode.A)) {
-			if (!Physics.Raycast (transform.position + Vector3.up / 1f, -transform.right, .51f, layerMask) &&
-				!Physics.Raycast (transform.position + Vector3.down / 1f, -transform.right, .51f, layerMask)) {
+			if (!Physics.Raycast (transform.position + Vector3.up / hight, -transform.right, .51f, layerMask) &&
+				!Physics.Raycast (transform.position + Vector3.down / hight, -transform.right, .51f, layerMask)) {
 				MoveLeft ();
 			}
 		}
 		if (Input.GetKey (KeyCode.D)) {
-			if (!Physics.Raycast (transform.position + Vector3.up / 1f, transform.right, .51f, layerMask) &&
-				!Physics.Raycast (transform.position + Vector3.down / 1f, transform.right, .51f, layerMask)) {
+			if (!Physics.Raycast (transform.position + Vector3.up / hight, transform.right, .51f, layerMask) &&
+				!Physics.Raycast (transform.position + Vector3.down / hight, transform.right, .51f, layerMask)) {
 				MoveRight ();
 			}
 		}
 
-		transform.position = new Vector3 (transform.position.x, 1, transform.position.z);
+		//transform.position = new Vector3 (transform.position.x, 1, transform.position.z);
 		transform.eulerAngles = new Vector3 (0, transform.eulerAngles.y, 0);
 		//---------------------------------
 

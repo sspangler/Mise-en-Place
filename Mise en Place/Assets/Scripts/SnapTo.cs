@@ -26,9 +26,12 @@ public class SnapTo : MonoBehaviour {
 					playerController.pickedObject.GetComponent<Collider> ().enabled = true;
 					playerController.pickedObject.transform.SetParent (transform);
 					playerController.pickedObject.transform.position = transform.position + (GetComponent<BoxCollider> ().center / 2);
-					playerController.pickedObject.transform.rotation = transform.rotation;
+					playerController.pickedObject.transform.eulerAngles = new Vector3 (90, 0, 90);;
 					playerController.pickedObject = null;
 					itemCounter++;
+					if (itemCounter == maxItems) {
+						GetComponent<Collider> ().enabled = false;
+					}
 				}
 			}
 		}
