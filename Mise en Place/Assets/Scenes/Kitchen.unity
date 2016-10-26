@@ -4322,7 +4322,7 @@ GameObject:
   - 114: {fileID: 957410438}
   - 54: {fileID: 957410437}
   m_Layer: 10
-  m_Name: Food Item 8
+  m_Name: Knife
   m_TagString: OrgStage
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4382,7 +4382,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: b7fb1849fd68a8245820fa41bc92f1b6, type: 2}
+  - {fileID: 2100000, guid: cf6a8f86dd5fafe4098fc908416f2755, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
@@ -4408,25 +4408,25 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.1782796, y: 0.5427952, z: 1.7660158}
+  m_Center: {x: -0.0016606417, y: 0.29336166, z: -0.2510882}
 --- !u!33 &957410442
 MeshFilter:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 957410436}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 4300000, guid: f169a5e71bf9a3c41b50d59d186feab3, type: 3}
 --- !u!4 &957410443
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 957410436}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.201, y: 1.11, z: 1.267}
-  m_LocalScale: {x: 0.15735288, y: 0.11234811, z: 0.096872196}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: 0.5}
+  m_LocalPosition: {x: 6.351, y: 0.984, z: 0.922}
+  m_LocalScale: {x: 0.17546012, y: 0.23882328, z: 0.38369992}
+  m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: -90}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 23
