@@ -43,28 +43,14 @@ public class PickUp : MonoBehaviour {
 				if (transform.parent != null && transform.parent.tag != "Player") {
 					transform.parent.gameObject.GetComponent<SnapTo> ().itemCounter--; transform.parent.gameObject.GetComponent<BoxCollider> ().enabled = true; 
 				}
-				if (toolBar) {
-					if (playerController.pickedObject != null) {
-						playerController.pickedObject.transform.position = playerController.pickedObject.GetComponent<PickUp> ().startPos;
-						playerController.DropObject ();
-					}
+				if (Vector3.Distance (mainCamera.transform.position, transform.position) < 4f) {
 					this.transform.SetParent (mainCamera.transform);
-					transform.localPosition = new Vector3 (0, -.22f, 1);
-					transform.localEulerAngles = new Vector3 (-95, 0, 0);
+					//transform.localPosition = new Vector3 (0, -.22f, 1);
+					//transform.localEulerAngles = new Vector3 (-95, 0, 0);
 					playerController.pickedObject = this.gameObject;
 					objectRigidbody.useGravity = false;
 					objectRigidbody.isKinematic = true;
 					GetComponent<Collider> ().enabled = false;
-				} else {
-					if (Vector3.Distance (mainCamera.transform.position, transform.position) < 4f) {
-						this.transform.SetParent (mainCamera.transform);
-						transform.localPosition = new Vector3 (0, -.22f, 1);
-						transform.localEulerAngles = new Vector3 (-95, 0, 0);
-						playerController.pickedObject = this.gameObject;
-						objectRigidbody.useGravity = false;
-						objectRigidbody.isKinematic = true;
-						GetComponent<Collider> ().enabled = false;
-					}
 				}
 			}
 		} else { //not orgstage pick up ingredient not bin
