@@ -5,7 +5,8 @@ public class PlayerController : MonoBehaviour {
 
 	public Rigidbody playerRigidbody;
 	public float moveSpeed;
-	public GameObject pickedObject;
+	public GameObject pickedFood;
+	public GameObject pickedUtensil;
 
 	LayerMask layerMask;
 
@@ -50,7 +51,7 @@ public class PlayerController : MonoBehaviour {
 		transform.eulerAngles = new Vector3 (0, transform.eulerAngles.y, 0);
 		//---------------------------------
 
-		if (Input.GetMouseButtonDown (1) && pickedObject != null) {
+		if (Input.GetMouseButtonDown (1) && (pickedFood != null || pickedUtensil != null)) {
 			DropObject ();
 		}
 	}
@@ -73,10 +74,18 @@ public class PlayerController : MonoBehaviour {
 		
 
 	public void DropObject () {
-		pickedObject.GetComponent<Rigidbody> ().useGravity = true;
-		pickedObject.GetComponent<Rigidbody> ().isKinematic = false;
-		pickedObject.GetComponent<Collider> ().enabled = true;
-		pickedObject.transform.SetParent (null);
-		pickedObject = null;
+		if (pickedFood != null) {
+			pickedFood.GetComponent<Rigidbody> ().useGravity = true;
+			pickedFood.GetComponent<Rigidbody> ().isKinematic = false;
+			pickedFood.GetComponent<Collider> ().enabled = true;
+			pickedFood.transform.SetParent (null);
+			pickedFood = null;
+		} else if (pickedUtensil != null) {
+			pickedUtensil.GetComponent<Rigidbody> ().useGravity = true;
+			pickedUtensil.GetComponent<Rigidbody> ().isKinematic = false;
+			pickedUtensil.GetComponent<Collider> ().enabled = true;
+			pickedUtensil.transform.SetParent (null);
+			pickedUtensil = null;
+		}
 	}
 }

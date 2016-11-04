@@ -20,14 +20,11 @@ public class SnapTo : MonoBehaviour {
 	void OnMouseOver () {
 		if (Input.GetMouseButtonDown (0)) {
 			if (itemCounter + 1 <= maxItems) {
-				if (playerController.pickedObject != null) {
-					//playerController.pickedObject.GetComponent<Rigidbody> ().useGravity = true;
-					//playerController.pickedObject.GetComponent<Rigidbody> ().isKinematic = false;
-					playerController.pickedObject.GetComponent<Collider> ().enabled = true;
-					playerController.pickedObject.transform.SetParent (transform);
-					playerController.pickedObject.transform.position = transform.position + Vector3.up/ 6.0f;
-					//playerController.pickedObject.transform.eulerAngles = new Vector3 (90, 0, 90);;
-					playerController.pickedObject = null;
+				if (playerController.pickedFood != null) {
+					playerController.pickedFood.GetComponent<Collider> ().enabled = true;
+					playerController.pickedFood.transform.SetParent (transform);
+					playerController.pickedFood.transform.position = transform.position + Vector3.up/ 6.0f;
+					playerController.pickedFood = null;
 					itemCounter++;
 					if (itemCounter == maxItems) {
 						GetComponent<Collider> ().enabled = false;

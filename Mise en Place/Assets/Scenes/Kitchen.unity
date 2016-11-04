@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44692528, g: 0.49678677, b: 0.57508475, a: 1}
+  m_IndirectSpecularColor: {r: 0.44692558, g: 0.49678743, b: 0.57508624, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -713,7 +713,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &290148238
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -793,6 +793,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &345398795
 GameObject:
   m_ObjectHideFlags: 0
@@ -855,7 +856,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &345398799
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -935,6 +936,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &352759598
 GameObject:
   m_ObjectHideFlags: 0
@@ -997,7 +999,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &352759602
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1077,6 +1079,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &356043186
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,7 +1250,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &375432785
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1327,6 +1330,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &410114378
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,7 +1392,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &410114382
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1512,7 +1516,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &428138194
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1592,6 +1596,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &462317648 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 6f27316f756b92b48a351158c742cfef, type: 3}
@@ -1854,7 +1859,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &620445541
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2003,7 +2008,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &641430032
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2168,7 +2173,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &659380095
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2626,7 +2631,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &780566983
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2706,6 +2711,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &825223545
 GameObject:
   m_ObjectHideFlags: 0
@@ -3155,7 +3161,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &931867002
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3235,6 +3241,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &950959790
 GameObject:
   m_ObjectHideFlags: 0
@@ -3296,7 +3303,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &950959794
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3435,9 +3442,9 @@ GameObject:
   - 33: {fileID: 957410442}
   - 65: {fileID: 957410441}
   - 23: {fileID: 957410440}
-  - 114: {fileID: 957410439}
   - 114: {fileID: 957410438}
   - 54: {fileID: 957410437}
+  - 114: {fileID: 957410439}
   m_Layer: 10
   m_Name: Knife
   m_TagString: OrgStage
@@ -3479,13 +3486,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 957410436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8619a56fd6537874a941c53f5112ab1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7184cc185da52ee48ace09a0731642a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
 --- !u!23 &957410440
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3651,7 +3657,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &1028069524
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3731,6 +3737,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &1056142308
 GameObject:
   m_ObjectHideFlags: 0
@@ -3952,7 +3959,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &1128135901
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4032,6 +4039,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1001 &1142232015
 Prefab:
   m_ObjectHideFlags: 0
@@ -4385,7 +4393,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &1325837791
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4465,6 +4473,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &1360846912 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 4602d9ac65c00f14c93f818feb229755, type: 3}
@@ -4806,7 +4815,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &1526867410
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5501,9 +5510,9 @@ GameObject:
   - 33: {fileID: 1809896620}
   - 65: {fileID: 1809896619}
   - 23: {fileID: 1809896618}
-  - 114: {fileID: 1809896617}
   - 114: {fileID: 1809896616}
   - 54: {fileID: 1809896615}
+  - 114: {fileID: 1809896617}
   m_Layer: 10
   m_Name: Spatula
   m_TagString: OrgStage
@@ -5545,13 +5554,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1809896614}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8619a56fd6537874a941c53f5112ab1d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7184cc185da52ee48ace09a0731642a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  orgStage: {fileID: 688537428}
+  orgStage: {fileID: 0}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
 --- !u!23 &1809896618
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5607,7 +5615,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1809896614}
   m_LocalRotation: {x: -0.4837095, y: 0.455714, z: 0.5438745, w: 0.5123968}
-  m_LocalPosition: {x: 6.4711285, y: 1.1601536, z: 0.7083017}
+  m_LocalPosition: {x: 6.472, y: 1.143, z: 0.706}
   m_LocalScale: {x: 0.35807094, y: 0.39073288, z: 0.09422128}
   m_LocalEulerAnglesHint: {x: -82.46001, y: -26.769001, z: 116.976006}
   m_Children: []
@@ -5675,7 +5683,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &1816051164
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5755,6 +5763,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &1818042192
 GameObject:
   m_ObjectHideFlags: 0
@@ -5816,7 +5825,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &1818042196
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6166,7 +6175,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &1892614897
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6246,6 +6255,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1001 &1908818831
 Prefab:
   m_ObjectHideFlags: 0
@@ -6547,7 +6557,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &1970927967
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6627,6 +6637,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &2000507452
 GameObject:
   m_ObjectHideFlags: 0
@@ -6689,7 +6700,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &2000507456
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6769,6 +6780,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &2013690165 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 4602d9ac65c00f14c93f818feb229755, type: 3}
@@ -7192,7 +7204,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerRigidbody: {fileID: 2073087992}
   moveSpeed: 5
-  pickedObject: {fileID: 0}
+  pickedFood: {fileID: 0}
+  pickedUtensil: {fileID: 0}
 --- !u!54 &2073087992
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7288,7 +7301,7 @@ MonoBehaviour:
   orgStage: {fileID: 688537428}
   mainCamera: {fileID: 0}
   playerController: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
+  needSpatula: 0
 --- !u!23 &2126342408
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7368,6 +7381,7 @@ MonoBehaviour:
   startColor: {r: 0, g: 0, b: 0, a: 0}
   cookedColor: {r: 0, g: 0, b: 0, a: 0}
   burntColor: {r: 0, g: 0, b: 0, a: 1}
+  needSpatula: 0
 --- !u!1 &2141836911
 GameObject:
   m_ObjectHideFlags: 0

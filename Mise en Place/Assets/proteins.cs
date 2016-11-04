@@ -13,6 +13,8 @@ public class proteins : MonoBehaviour {
 	public Color burntColor = Color.black;
 
 	MeshRenderer foodColor;
+
+	public bool needSpatula;
 	// Use this for initialization
 	void Start () {
 		foodColor = GetComponent<MeshRenderer> ();
@@ -24,6 +26,10 @@ public class proteins : MonoBehaviour {
 		if (cooking) {
 			cookedTime += Time.deltaTime;
 			foodColor.material.color = Color.Lerp (startColor, burntColor, cookedTime / burntTime); //lerps between the starting color and black
+		}
+
+		if (cookedTime > 0) {
+			GetComponent<PickUpFood>().needSpatula = true;
 		}
 	}
 
