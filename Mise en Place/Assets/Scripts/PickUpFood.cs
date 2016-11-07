@@ -21,6 +21,7 @@ public class PickUpFood : MonoBehaviour {
 	void OnMouseOver () {
 		if (Input.GetMouseButtonDown (0)) {
 			PickUpItem ();
+
 		}
 	}
 
@@ -33,6 +34,9 @@ public class PickUpFood : MonoBehaviour {
 				}
 					
 				if (!needSpatula || (needSpatula && playerController.pickedUtensil.name == "Spatula")) { //if you dont need spatula or need the spatula and have it
+					if (needSpatula) {
+						GetComponent<proteins> ().cooking = false;
+					}
 					if (Vector3.Distance (mainCamera.transform.position, transform.position) < 4f) { //this is just for picking them up and centering them
 						this.transform.SetParent (mainCamera.transform);
 						//transform.localPosition = new Vector3 (0, -.22f, 1);

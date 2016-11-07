@@ -33,10 +33,11 @@ public class proteins : MonoBehaviour {
 		}
 	}
 
-	void OnTriggerEnter (Collider col) {
+	void OnTriggerStay (Collider col) {
 		if (col.name == "Oven") {
 			cooking = true;
-		}
+		} else
+			cooking = false;
 	}
 
 	void OnTriggerExit (Collider col) {
