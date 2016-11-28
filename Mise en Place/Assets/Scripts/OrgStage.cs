@@ -30,7 +30,7 @@ public class OrgStage : MonoBehaviour {
 
 	void StageEnd () {
 		foreach ( GameObject item in GameObject.FindGameObjectsWithTag("OrgStage")) {
-			Destroy(item);
+//			Destroy(item);
 		}
 	}
 }
